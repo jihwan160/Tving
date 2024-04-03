@@ -1,14 +1,14 @@
-.swiper-pagination {
+.swiper_img .swiper-pagination {
     height: 10%;
     left: 85% !important;
     bottom: 20px !important;
     width: 100px !important;
 }
 
-.swiper-pagination-bullet-active {
+.swiper_img .swiper-pagination-bullet-active {
     background: #fff !important;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper_img .swiper-button-next, .swiper-button-prev {
     color: #fff !important;
 }

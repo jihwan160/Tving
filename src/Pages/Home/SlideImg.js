@@ -50,6 +50,7 @@ const SlideImg = () => {
               navigation
               pagination={{ clickable: true }}
               style={{height:"50%"}}
+              className='swiper_img'
             >
       
               <SwiperSlide>
