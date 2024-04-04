@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import logo from './../../img/tving-logo.svg'
 import icon from './../../img/tving_icon.webp'
+import { useNavigate } from 'react-router-dom';
 
 
 const GnbLeft = styled.div`
@@ -42,12 +43,13 @@ const Gnb = () => {
 
 
 const GnbArea = () => {
+  const navigate = useNavigate(null)
 
     return(
         <div>
             <GnbCover>
               <GnbLeft>
-                <img src={logo} alt='logo' style={{height:"100%"}} />
+                <img src={logo} alt='logo' style={{height:"100%",cursor:"pointer"}} onClick={()=>{navigate('/')}}/>
                 <Ul>
                   <Li>시리즈</Li>
                   <Li>영화</Li>

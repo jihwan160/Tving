@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './Contents.css'
 
 import { Navigation } from 'swiper'
 import {Swiper, SwiperSlide} from 'swiper/react'
@@ -6,13 +7,13 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 
 const ContentsCover = styled.div`
     margin: 40px 0;
     padding: 0 40px;
     color: #fff;
-    height: 400px;
 `;
 
 const SlideList = styled.div`
@@ -34,6 +35,7 @@ const Contents = ({url_1}) => {
 
         const [moives,setMovies] = useState([])
 
+        const navigate = useNavigate(null);
         const option = {
             method: 'GET',
             headers : {
@@ -48,9 +50,14 @@ const Contents = ({url_1}) => {
             })
         }, [])
 
+        const handelClick = (anql) => {
+            navigate(`/detail/${anql.id}`, {state:{anql}})
+        }
+
+
         return(
             <ContentsCover>
-                <h2 style={{marginBottom:"40px"}}>인기 순위</h2>
+                <h2 style={{marginBottom:"40px",fontSize:"30px",fontWeight:"bold"}}>인기 급상승 영화(일간)</h2>
                 <Swiper
                     modules={[Navigation]}
                     navigation
@@ -58,7 +65,7 @@ const Contents = ({url_1}) => {
                     slidesPerView={6}
                 >
                     {moives.map((anql,key) => (
-                        <SwiperSlide style={{width:"100%",height:"350px"}}>
+                        <SwiperSlide style={{width:"100%",height:"auto"}} onClick={()=>handelClick(anql)}>
                             <SlideList key={anql.id}>
                                 <img src={`https://image.tmdb.org/t/p/w500/${anql.poster_path}`} alt={key} style={{width:"100%",height:"100%"}}/>
                             </SlideList>
