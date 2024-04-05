@@ -4,6 +4,7 @@ import SlideImg from './SlideImg'
 import Category from './Category'
 import Contents from './Contents'
 import {api_key} from '../../myAPi'
+import Footer from './Footer'
 
 const Home = () => {
 
@@ -15,6 +16,7 @@ const Home = () => {
         <SlideImg />
         <Category />
         <Contents url_1={url_1} />
+        <Footer />
     </>
   )
 }

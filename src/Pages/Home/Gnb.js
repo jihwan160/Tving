@@ -26,6 +26,7 @@ const Li = styled.li`
   cursor: pointer;
   margin-right: 40px;
   color: #d9d9d9;
+  font-size: 16px;
 `
 
 const GnbCover = styled.div`

@@ -3,14 +3,14 @@ import './Detail.css'
 import { useLocation } from 'react-router-dom'
 import Gnb from '../Home/Gnb';
 import styled from 'styled-components';
+import Footer from '../Home/Footer';
 
 
 const DetailPageArea = styled.div`
     width: 100%;
     height: 100%;
-    padding: 60px;
-    margin: 40px 0;
-    font-size: 40px;
+    padding: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: #fff;
 `;
@@ -57,6 +57,7 @@ const Detail = () => {
         <>
             <Gnb />
             <DetailPage />
+            <Footer />
         </>
     )
 }

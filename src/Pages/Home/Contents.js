@@ -57,7 +57,7 @@ const Contents = ({url_1}) => {
 
         return(
             <ContentsCover>
-                <h2 style={{marginBottom:"40px",fontSize:"30px",fontWeight:"bold"}}>인기 급상승 영화(일간)</h2>
+                <h2 style={{marginBottom:"40px",fontSize:"24px",fontWeight:"bold"}}>인기 급상승 영화(일간 기준)</h2>
                 <Swiper
                     modules={[Navigation]}
                     navigation

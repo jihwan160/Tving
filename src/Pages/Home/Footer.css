@@ -1,0 +1,52 @@
+select {
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+}
+select option {
+    color: #000;
+    font-size: 16px;
+}
+.line {
+    margin: 0 20px;
+    margin-bottom: 6px;
+}
+.footerDesc {
+    margin-bottom: 10px;
+}
+.footerDesc span{
+    position: relative;
+    padding: 0 5px;
+}
+.footerDesc span:first-child {
+    padding-left: 0;
+}
+.footerDesc span:first-child::before {
+    width: 0;
+}
+.footerDesc span::before {
+    content: "";
+    width: 1px;
+    height: 11px;
+    display: inline-block;
+    background: #a9a9a9;
+    position: absolute;
+    left: 0;
+}
+.st {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.st:hover {
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #a9a9a9;
+    font-size: 12px;
+    font-weight: normal;
+}
