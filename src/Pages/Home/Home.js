@@ -12,7 +12,7 @@ const Home = () => {
   const url_1 = `http://api.themoviedb.org/3/trending/movie/week?api_key=${api_key}&language=ko-KR`
   return (
     <>
-        <Gnb />
+        <Gnb content={gnbImg} />
         <SlideImg />
         <Category />
         <Contents url_1={url_1} />
@@ -22,3 +22,8 @@ const Home = () => {
 }
 
 export default Home
+
+const gnbImg = {
+  gnbImg1 : '../../img/tving-logo.svg',
+  gnbImg2 : '../../img/tving_icon.webp'
+}

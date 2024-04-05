@@ -65,8 +65,8 @@ const Contents = ({url_1}) => {
                     slidesPerView={6}
                 >
                     {moives.map((anql,key) => (
-                        <SwiperSlide style={{width:"100%",height:"auto"}} onClick={()=>handelClick(anql)}>
-                            <SlideList key={anql.id}>
+                        <SwiperSlide style={{width:"100%",height:"auto"}} onClick={()=>handelClick(anql)} key={anql.id}>
+                            <SlideList>
                                 <img src={`https://image.tmdb.org/t/p/w500/${anql.poster_path}`} alt={key} style={{width:"100%",height:"100%"}}/>
                             </SlideList>
                         </SwiperSlide>
