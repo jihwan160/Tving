@@ -43,7 +43,7 @@ const GnbCover = styled.div`
 const Gnb = () => {
 
 
-const GnbArea = () => {
+const GnbArea = () => { 
   const navigate = useNavigate(null)
 
     return(
