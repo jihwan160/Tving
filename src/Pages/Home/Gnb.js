@@ -60,7 +60,7 @@ const GnbArea = () => {
               </GnbLeft>
               <GnbRight>
                 <div><i className="fa-solid fa-magnifying-glass" style={{cursor:"pointer",color:"#d9d9d9"}}></i></div>
-                <div style={{marginLeft:"40px"}}><img src={icon} alt='logo' style={{width:"30px", height:"30px", cursor:"pointer"}} /></div>
+                <div style={{marginLeft:"40px"}}><img src={icon} alt='icon' style={{width:"30px", height:"30px", cursor:"pointer"}} /></div>
               </GnbRight>
             </GnbCover>
         </div>
@@ -68,7 +68,7 @@ const GnbArea = () => {
 }
 
   return (
-    <>
+    <>  
         <GnbArea />
     </>
   )
