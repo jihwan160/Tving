@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import logo from './../../img/tving-logo.svg'
-import icon from './../../img/tving_icon.webp'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -50,7 +48,7 @@ const GnbArea = () => {
         <div>
             <GnbCover>
               <GnbLeft>
-                <img src={logo} alt='logo' style={{height:"100%",cursor:"pointer"}} onClick={()=>{navigate('/')}}/>
+                <img src={`${process.env.PUBLIC_URL}img/tving-logo.svg`} alt='logo' style={{height:"100%",cursor:"pointer"}} onClick={()=>{navigate('/')}}/>
                 <Ul>
                   <Li>시리즈</Li>
                   <Li>영화</Li>
@@ -60,7 +58,7 @@ const GnbArea = () => {
               </GnbLeft>
               <GnbRight>
                 <div><i className="fa-solid fa-magnifying-glass" style={{cursor:"pointer",color:"#d9d9d9"}}></i></div>
-                <div style={{marginLeft:"40px"}}><img src={icon} alt='icon' style={{width:"30px", height:"30px", cursor:"pointer"}} /></div>
+                <div style={{marginLeft:"40px"}}><img src={`${process.env.PUBLIC_URL}img/tving_icon.webp`} alt='icon' style={{width:"30px", height:"30px", cursor:"pointer"}} /></div>
               </GnbRight>
             </GnbCover>
         </div>

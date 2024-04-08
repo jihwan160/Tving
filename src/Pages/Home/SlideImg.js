@@ -55,8 +55,8 @@ const SlideImg = () => {
       
               <SwiperSlide>
                 <SwiperBox>
-                    <img src={require(`./../../img/swi1.png`)} alt={`swi1`} style={{width:"100%",height:"100%",borderRadius:"10px"}}/>
-                    <img src={require(`./../../img/swi1-1.png`)} alt={`swi1-1`} style={{width:"30%",height:"20%",position:"absolute", left:"50px", bottom:"150px"}} />
+                    <img src={`${process.env.PUBLIC_URL}img/swi1.png`} alt={`swi1`} style={{width:"100%",height:"100%",borderRadius:"10px"}}/>
+                    <img src={`${process.env.PUBLIC_URL}img/swi1-1.png`} alt={`swi1-1`} style={{width:"30%",height:"20%",position:"absolute", left:"50px", bottom:"150px"}} />
                     <BoxShadow></BoxShadow>
                     <SwiperSubTitle>
                       <p>큰 자기 유재석 & 아기자기 조세호와</p>
@@ -67,8 +67,8 @@ const SlideImg = () => {
       
               <SwiperSlide>
                 <SwiperBox>
-                    <img src={require(`./../../img/swi2.webp`)} alt={`swi2`} style={{width:"100%",height:"100%",borderRadius:"10px"}}/>
-                    <img src={require(`./../../img/swi2-1.webp`)} alt={`swi2-1`} style={{width:"30%",height:"20%",position:"absolute", left:"50px", bottom:"150px"}} />
+                    <img src={`${process.env.PUBLIC_URL}img/swi2.webp`} alt={`swi2`} style={{width:"100%",height:"100%",borderRadius:"10px"}}/>
+                    <img src={`${process.env.PUBLIC_URL}img/swi2-1.webp`} alt={`swi2-1`} style={{width:"30%",height:"20%",position:"absolute", left:"50px", bottom:"150px"}} />
                     <BoxShadow></BoxShadow>
                     <SwiperSubTitle>
                       <p>방탄소년단(BTS) 제이홉의</p>
@@ -79,8 +79,8 @@ const SlideImg = () => {
       
               <SwiperSlide>
                 <SwiperBox>
-                    <img src={require(`./../../img/swi3.webp`)} alt={`swi3`} style={{width:"100%",height:"100%",borderRadius:"10px"}}/>
-                    <img src={require(`./../../img/swi3-1.webp`)} alt={`swi3-1`} style={{width:"30%",height:"20%",position:"absolute", left:"50px", bottom:"150px"}} />
+                    <img src={`${process.env.PUBLIC_URL}img/swi3.webp`} alt={`swi3`} style={{width:"100%",height:"100%",borderRadius:"10px"}}/>
+                    <img src={`${process.env.PUBLIC_URL}img/swi3-1.webp`} alt={`swi3-1`} style={{width:"30%",height:"20%",position:"absolute", left:"50px", bottom:"150px"}} />
                     <BoxShadow></BoxShadow>
                     <SwiperSubTitle>
                       <p>틀어진 관계들</p>

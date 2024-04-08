@@ -46,7 +46,7 @@ const Category = () => {
                     {List.map((i,key) => (
                         <SubCategoryLi key={key}>
                             <div style={{width:"140px",height:"70px"}}>
-                                <img src={require(`./../../img/SubSlide${i}.webp`)} alt={key+1} style={{width:"100%",height:"100%"}} />
+                                <img src={`${process.env.PUBLIC_URL}img/SubSlide${i}.webp`} alt={key+1} style={{width:"100%",height:"100%"}} />
                             </div>
                         </SubCategoryLi>
                     ))}
