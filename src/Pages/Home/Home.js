@@ -9,7 +9,7 @@ import Footer from './Footer'
 const Home = () => {
 
 
-  const url_1 = `http://api.themoviedb.org/3/trending/movie/week?api_key=${api_key}&language=ko-KR`
+  const url_1 = `https://api.themoviedb.org/3/trending/movie/week?api_key=${api_key}&language=ko-KR`
   return (
     <>
         <Gnb />
